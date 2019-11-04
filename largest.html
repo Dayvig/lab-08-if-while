@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    var input;
+    var num = [4];
+    for (var i = 0;i<4;i++){
+      input = prompt("Gimme number "+(i+1));
+      num[i] = parseInt(input, 10);
+    }
+    var largest = 0;
+    for (var k = 0 ; k< num.length;k++){
+      if (num[k] > largest){
+        largest = num[k];
+      }
+    }
+    document.write("The largest number is "+largest);
+    </script>
+  </body>
+</html>
