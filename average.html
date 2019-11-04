@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    var input;
+    var num = [4];
+    for (var i = 0;i<4;i++){
+      input = prompt("Gimme number "+(i+1));
+      num[i] = parseInt(input, 10);
+    }
+    var total=0;
+    for (var k = 0 ; k< num.length;k++){
+      total += num[k];
+    }
+    document.write("The average is: "+(total/num.length));
+    </script>
+  </body>
+</html>
